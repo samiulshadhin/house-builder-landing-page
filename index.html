@@ -19,10 +19,12 @@
                         'header-gradient-one': '#F4F4F4',
                         'header-gradient-two': 'rgba(255, 255, 255, 1)',
                         'btn-color-full': '#ABEF5F',
+                        'btn-color-half': 'rgba(171, 239, 95, 0.5)',
                         'btn-primary': '#1C1C1C',
                         'gray-primary': '#737373',
                         'gray-secondary': '#494949',
                         'main-title-color': '#212121',
+                        'body-bg-color': '#F4F4F4',
                     }
                 }
             }
@@ -35,26 +37,27 @@
     </style>
 </head>
 
-<body class="manrope-font bg-[#F4F2F2]">
-    <header class="h-[550px] border bg-gradient-to-b from-header-gradient-one from-5% to-header-gradient-two">
+<body class="manrope-font">
+    <header class="border bg-gradient-to-b from-header-gradient-one from-5% to-header-gradient-two">
 
-        <!-- Navbar Section -->
-        <div class="navbar w-[93%] lg:w-5/6 pt-8 lg:pt-12 pb-8 lg:pb-10 mx-auto flex justify-between items-center">
+        <!-- Header Navbar Section -->
+        <nav class="navbar w-[93%] lg:w-5/6 pt-8 lg:pt-10 pb-8 lg:pb-10 mx-auto flex justify-between items-center">
 
             <!-- Left Icon and Website Title -->
             <div class="navbar-start flex flex-row-reverse justify-between w-full lg:w-2/6">
-                <div class="dropdown dropdown-end text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9]  cursor-pointer">
+                <div
+                    class="dropdown dropdown-end text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] cursor-pointer">
                     <div tabindex="0" role="button" class="btn btn-ghost px-[14px] lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -rotate-180" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -rotate-180" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow">
                         <li>
-                            <a class="text-gray-secondary">Home</a>
+                            <a class="text-gray-primary">Home</a>
                         </li>
                         <li>
                             <a class="text-gray-primary">Services</a>
@@ -71,7 +74,7 @@
                     </ul>
                 </div>
                 <a class="flex gap-2 items-center cursor-pointer"><i
-                        class="fa-solid fa-arrow-right-long bg-btn-color-full rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 text-btn-primary"></i>
+                        class="fa-solid fa-arrow-right-long bg-btn-color-full rounded-full w-8 h-8 lg:w-7 lg:h-7 flex justify-center items-center text-base -rotate-45 text-btn-primary"></i>
                     <span class="text-4xl lg:text-3xl text-main-title-color font-extrabold">Rinterio</span></a>
             </div>
 
@@ -98,18 +101,40 @@
 
             <!-- Menu Icons and Menu Button -->
             <div class="navbar-end w-2/5 hidden lg:flex justify-between">
-                <div class="flex gap-3">
-                    <i
-                        class="fa-solid fa-magnifying-glass text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] p-3 cursor-pointer"></i>
-                    <i
-                        class="fa-solid fa-cart-shopping text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] p-3 cursor-pointer"></i>
-                </div>
+                <i
+                    class="fa-solid fa-magnifying-glass text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] p-3 cursor-pointer">
+                </i>
+                <i
+                    class="fa-solid fa-cart-shopping text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] p-3 cursor-pointer">
+                </i>
                 <a class="btn rounded-full bg-btn-color-full text-btn-primary font-extrabold text-lg">Book Consult <i
-                        class="fa-solid fa-arrow-right-long bg-btn-primary rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 text-white"></i></a>
+                        class="fa-solid fa-arrow-right-long bg-btn-primary rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 text-white"></i>
+                </a>
             </div>
-        </div>
+        </nav>
+        <!-- Header Navbar Section -->
 
-        <!-- Navbar Section -->
+        <!-- Header Banner Section -->
+        <section class="w-[93%] mx-auto mb-12 lg:mb-20 lg:w-5/6">
+            <div class="w-3/4 lg:w-1/2 mx-auto">
+                <img class="mx-auto mb-3" src="assets/banner.png" alt="">
+            </div>
+            <div class="text-center">
+                <h1 class="text-main-title-color text-3xl lg:text-6xl font-extrabold lg:leading-[70px] mb-4 lg:mb-6">A barn house of this
+                    design has a striking appearance</h1>
+                <p class="text-gray-secondary font-medium w-full lg:w-4/5 mx-auto mb-7">The barn house captivates with
+                    its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <a
+                    class="btn w-full lg:w-fit lg:px-5 rounded-full border border-1 border-btn-color-full bg-btn-color-half text-btn-primary font-extrabold text-lg">View
+                    Details
+                    <i
+                        class="fa-solid fa-arrow-right-long rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 bg-btn-color-full">
+                    </i>
+                </a>
+            </div>
+        </section>
+        <!-- Header Banner Section -->
 
     </header>
     <main>
