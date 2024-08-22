@@ -16,7 +16,13 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'header-gradient-one': '#F4F4F4',
+                        'header-gradient-two': 'rgba(255, 255, 255, 1)',
+                        'btn-color-full': '#ABEF5F',
+                        'btn-primary': '#1C1C1C',
+                        'gray-primary': '#737373',
+                        'gray-secondary': '#494949',
+                        'main-title-color': '#212121',
                     }
                 }
             }
@@ -29,9 +35,82 @@
     </style>
 </head>
 
-<body class="manrope-font">
-    <header>
-        
+<body class="manrope-font bg-[#F4F2F2]">
+    <header class="h-[550px] border bg-gradient-to-b from-header-gradient-one from-5% to-header-gradient-two">
+
+        <!-- Navbar Section -->
+        <div class="navbar w-[93%] lg:w-5/6 pt-8 lg:pt-12 pb-8 lg:pb-10 mx-auto flex justify-between items-center">
+
+            <!-- Left Icon and Website Title -->
+            <div class="navbar-start flex flex-row-reverse justify-between w-full lg:w-2/6">
+                <div class="dropdown dropdown-end text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9]  cursor-pointer">
+                    <div tabindex="0" role="button" class="btn btn-ghost px-[14px] lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -rotate-180" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li>
+                            <a class="text-gray-secondary">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-primary">Services</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-primary">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-primary">Blogs</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-primary">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="flex gap-2 items-center cursor-pointer"><i
+                        class="fa-solid fa-arrow-right-long bg-btn-color-full rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 text-btn-primary"></i>
+                    <span class="text-4xl lg:text-3xl text-main-title-color font-extrabold">Rinterio</span></a>
+            </div>
+
+            <!-- 5 Menu Items -->
+            <div class="navbar-center w-[45%] hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a class="text-gray-secondary font-extrabold">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-primary">Services</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-primary">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-primary">Blogs</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-primary">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Menu Icons and Menu Button -->
+            <div class="navbar-end w-2/5 hidden lg:flex justify-between">
+                <div class="flex gap-3">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] p-3 cursor-pointer"></i>
+                    <i
+                        class="fa-solid fa-cart-shopping text-gray-primary bg-white rounded-full border border-1 border-[#E9E9E9] p-3 cursor-pointer"></i>
+                </div>
+                <a class="btn rounded-full bg-btn-color-full text-btn-primary font-extrabold text-lg">Book Consult <i
+                        class="fa-solid fa-arrow-right-long bg-btn-primary rounded-full w-7 h-7 flex justify-center items-center text-base -rotate-45 text-white"></i></a>
+            </div>
+        </div>
+
+        <!-- Navbar Section -->
+
     </header>
     <main>
 
